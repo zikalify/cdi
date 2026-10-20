@@ -90,7 +90,6 @@
       display: block;
     }
     .country {
-      fill: #1e293b;
       stroke: rgba(56, 103, 214, 0.15);
       stroke-width: 0.5px;
       transition: stroke-width 0.15s, stroke 0.15s;
@@ -387,6 +386,14 @@
 
       g = svg.append('g');
 
+      const zoom = d3.zoom()
+        .scaleExtent([1, 8])
+        .on('zoom', (event) => {
+          g.attr('transform', event.transform);
+        });
+
+      svg.call(zoom);
+
       window.addEventListener('resize', () => {
         const w = container.clientWidth;
         const h = container.clientHeight;
@@ -414,8 +421,18 @@
       const min = d3.min(values);
       const max = d3.max(values);
       
-      colorScale = d3.scaleSequential(d3.interpolateBlues)
-        .domain([min, max]);
+      colorScale = d3.scaleSequential()
+        .domain([min, max])
+        .clamp(true)
+        .interpolator(d3.interpolateRgbBasis([
+          '#081a35',  // very dark blue
+          '#1e3a5f',  // dark blue
+          '#2563eb',  // medium blue
+          '#3b82f6',  // bright blue
+          '#60a5fa',  // light blue
+          '#93c5fd',  // lighter blue
+          '#dbeafe'   // very light blue
+        ]));
     }
 
     function getCountryColor(code) {
@@ -525,7 +542,10 @@
             return 'country' + (data && data[currentMetric] !== undefined ? '' : ' no-data');
           })
           .attr('d', path)
-          .attr('fill', d => getCountryColor(isoNumericToAlpha3(d.id)))
+          .style('fill', d => {
+            const code = isoNumericToAlpha3(d.id);
+            return getCountryColor(code);
+          })
           .on('mousemove', (event, d) => showTooltip(event, isoNumericToAlpha3(d.id)))
           .on('mouseleave', hideTooltip)
           .on('click', (event, d) => showTooltip(event, isoNumericToAlpha3(d.id))),
@@ -535,7 +555,10 @@
             const data = diversityData[code];
             return 'country' + (data && data[currentMetric] !== undefined ? '' : ' no-data');
           })
-          .attr('fill', d => getCountryColor(isoNumericToAlpha3(d.id)))
+          .style('fill', d => {
+            const code = isoNumericToAlpha3(d.id);
+            return getCountryColor(code);
+          })
           .attr('d', path)
       );
 
@@ -543,6 +566,7 @@
     }
 
     function isoNumericToAlpha3(numeric) {
+      const num = parseInt(numeric, 10);
       const map = {
         4: 'AFG', 8: 'ALB', 10: 'ATA', 12: 'DZA', 16: 'ASM', 20: 'AND', 24: 'AGO', 28: 'ATG',
         31: 'AZE', 32: 'ARG', 36: 'AUS', 40: 'AUT', 44: 'BHS', 48: 'BHR', 50: 'BGD', 51: 'ARM',
@@ -580,7 +604,7 @@
         840: 'USA', 850: 'VIR', 854: 'BFA', 858: 'URY', 860: 'UZB', 862: 'VEN', 876: 'WLF',
         882: 'WSM', 887: 'YEM', 891: 'CSK', 894: 'ZMB', 898: 'ZWE'
       };
-      return map[numeric] || String(numeric);
+      return map[num] || String(numeric);
     }
 
     init();
