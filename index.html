@@ -70,7 +70,7 @@
       width: 150px;
       height: 8px;
       border-radius: 4px;
-      background: linear-gradient(90deg, #1e3a5f 0%, #2563eb 25%, #3b82f6 50%, #60a5fa 75%, #93c5fd 100%);
+      background: linear-gradient(90deg, #f8fafc 0%, #dbeafe 25%, #93c5fd 50%, #60a5fa 75%, #3b82f6 100%);
     }
     .legend-labels {
       display: flex;
@@ -120,9 +120,8 @@
       min-width: 260px;
       max-width: 320px;
       backdrop-filter: blur(20px);
-      transform: translate(-50%, -100%);
       opacity: 0;
-      transition: opacity 0.15s ease;
+      transition: opacity 0.1s ease;
     }
     .tooltip.visible {
       opacity: 1;
@@ -248,10 +247,10 @@
     <div class="controls">
       <select class="metric-select" id="metricSelect">
         <option value="fe_cultdiv">Cultural Diversity (Fearon)</option>
-        <option value="fe_etfra">Ethnic Fractionalization (Fearon)</option>
-        <option value="al_ethnic2000">Ethnic Fractionalization (Alesina)</option>
-        <option value="al_language2000">Linguistic Fractionalization (Alesina)</option>
-        <option value="al_religion2000">Religious Fractionalization (Alesina)</option>
+        <option value="fe_etfra">Ethnic Diversity — Fearon (1990s)</option>
+        <option value="al_ethnic2000">Ethnic Diversity — Alesina (2001)</option>
+        <option value="al_language2000">Linguistic Diversity (Alesina)</option>
+        <option value="al_religion2000">Religious Diversity (Alesina)</option>
         <option value="composite">Composite Diversity Index</option>
       </select>
       <div class="legend">
@@ -283,11 +282,11 @@
   <script>
     const METRICS = {
       fe_cultdiv: { label: 'Cultural Diversity (Fearon)', desc: 'Accounts for cultural distances between groups via language structure' },
-      fe_etfra: { label: 'Ethnic Fractionalization (Fearon)', desc: 'Probability two random people belong to different ethnic groups' },
-      al_ethnic2000: { label: 'Ethnic Fractionalization (Alesina)', desc: 'Ethnic fractionalization from Encyclopaedia Britannica 2001' },
-      al_language2000: { label: 'Linguistic Fractionalization (Alesina)', desc: 'Probability two random people speak different languages' },
-      al_religion2000: { label: 'Religious Fractionalization (Alesina)', desc: 'Probability two random people have different religions' },
-      composite: { label: 'Composite Diversity Index', desc: 'Average of all five diversity measures (normalized)' }
+      fe_etfra: { label: 'Ethnic Diversity — Fearon (1990s)', desc: '822 ethnic groups across 160 countries (1990s data); probability two random people are from different groups' },
+      al_ethnic2000: { label: 'Ethnic Diversity — Alesina (2001)', desc: 'From Encyclopaedia Britannica 2001; broader ethnic definition combining race & language' },
+      al_language2000: { label: 'Linguistic Diversity (Alesina)', desc: 'Probability two random people speak different mother tongues' },
+      al_religion2000: { label: 'Religious Diversity (Alesina)', desc: 'Probability two random people have different religious affiliations' },
+      composite: { label: 'Composite Diversity Index', desc: 'Normalized average of all five diversity measures above' }
     };
 
     let diversityData = {};
@@ -425,13 +424,14 @@
         .domain([min, max])
         .clamp(true)
         .interpolator(d3.interpolateRgbBasis([
-          '#081a35',  // very dark blue
-          '#1e3a5f',  // dark blue
-          '#2563eb',  // medium blue
-          '#3b82f6',  // bright blue
-          '#60a5fa',  // light blue
+          '#f8fafc',  // very light (low diversity)
+          '#dbeafe',  // light
           '#93c5fd',  // lighter blue
-          '#dbeafe'   // very light blue
+          '#60a5fa',  // light blue
+          '#3b82f6',  // medium blue
+          '#2563eb',  // dark blue
+          '#1e3a5f',  // darker blue
+          '#081a35'   // very dark (high diversity)
         ]));
     }
 
@@ -503,17 +503,22 @@
     function positionTooltip(event) {
       const tooltip = document.getElementById('tooltip');
       const rect = tooltip.getBoundingClientRect();
-      const padding = 20;
+      const padding = 16;
       
-      let left = event.clientX - rect.width / 2;
-      let top = event.clientY - rect.height - 20;
+      let left = event.clientX + 16;
+      let top = event.clientY - rect.height - 12;
 
-      if (left < padding) left = padding;
       if (left + rect.width > window.innerWidth - padding) {
-        left = window.innerWidth - rect.width - padding;
+        left = event.clientX - rect.width - 16;
+      }
+      if (left < padding) {
+        left = padding;
       }
       if (top < padding) {
-        top = event.clientY + 20;
+        top = event.clientY + 16;
+      }
+      if (top + rect.height > window.innerHeight - padding) {
+        top = window.innerHeight - rect.height - padding;
       }
 
       tooltip.style.left = left + 'px';
