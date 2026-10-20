@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cultural Diversity World Map</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://d3js.org/topojson.v3.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: #0a0e17;
+      color: #e8ebf0;
+      min-height: 100vh;
+    }
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 1rem 2rem;
+      background: linear-gradient(180deg, rgba(10,14,23,0.95) 0%, rgba(10,14,23,0) 100%);
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(56, 103, 214, 0.2);
+    }
+    .header h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      background: linear-gradient(90deg, #60a5fa, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .controls {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+    .metric-select {
+      background: rgba(30, 41, 59, 0.9);
+      border: 1px solid rgba(56, 103, 214, 0.3);
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      color: #e8ebf0;
+      font-size: 0.875rem;
+      cursor: pointer;
+      backdrop-filter: blur(10px);
+    }
+    .metric-select:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+    }
+    .legend {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.75rem;
+      color: #94a3b8;
+    }
+    .legend-gradient {
+      width: 150px;
+      height: 8px;
+      border-radius: 4px;
+      background: linear-gradient(90deg, #1e3a5f 0%, #2563eb 25%, #3b82f6 50%, #60a5fa 75%, #93c5fd 100%);
+    }
+    .legend-labels {
+      display: flex;
+      justify-content: space-between;
+      width: 150px;
+      font-size: 0.65rem;
+      color: #64748b;
+    }
+    #map-container {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+    svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .country {
+      fill: #1e293b;
+      stroke: rgba(56, 103, 214, 0.15);
+      stroke-width: 0.5px;
+      transition: stroke-width 0.15s, stroke 0.15s;
+      vector-effect: non-scaling-stroke;
+    }
+    .country:hover {
+      stroke: #3b82f6;
+      stroke-width: 1.5px;
+      cursor: pointer;
+    }
+    .country.no-data {
+      fill: #0f172a;
+      stroke: rgba(100, 116, 139, 0.1);
+    }
+    .country.no-data:hover {
+      stroke: rgba(100, 116, 139, 0.3);
+      cursor: default;
+    }
+    .tooltip {
+      position: fixed;
+      pointer-events: none;
+      background: rgba(15, 23, 42, 0.98);
+      border: 1px solid rgba(56, 103, 214, 0.3);
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(59, 130, 246, 0.1);
+      z-index: 1000;
+      min-width: 260px;
+      max-width: 320px;
+      backdrop-filter: blur(20px);
+      transform: translate(-50%, -100%);
+      opacity: 0;
+      transition: opacity 0.15s ease;
+    }
+    .tooltip.visible {
+      opacity: 1;
+    }
+    .tooltip-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid rgba(56, 103, 214, 0.2);
+    }
+    .tooltip-country {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #f1f5f9;
+    }
+    .tooltip-score {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #60a5fa, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+    }
+    .tooltip-metric {
+      font-size: 0.7rem;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 0.25rem;
+    }
+    .tooltip-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem;
+    }
+    .stat {
+      background: rgba(56, 103, 214, 0.08);
+      border: 1px solid rgba(56, 103, 214, 0.15);
+      border-radius: 8px;
+      padding: 0.625rem;
+    }
+    .stat-label {
+      font-size: 0.65rem;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.25rem;
+    }
+    .stat-value {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #e2e8f0;
+    }
+    .stat-bar {
+      height: 4px;
+      background: rgba(56, 103, 214, 0.15);
+      border-radius: 2px;
+      margin-top: 0.5rem;
+      overflow: hidden;
+    }
+    .stat-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #3b82f6, #60a5fa);
+      border-radius: 2px;
+      transition: width 0.3s ease;
+    }
+    .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1rem 2rem;
+      background: linear-gradient(0deg, rgba(10,14,23,0.95) 0%, rgba(10,14,23,0) 100%);
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      color: #64748b;
+      border-top: 1px solid rgba(56, 103, 214, 0.2);
+    }
+    .footer a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .data-source {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      .header, .footer {
+        padding: 1rem;
+      }
+      .header h1 {
+        font-size: 1.25rem;
+      }
+      .controls {
+        flex-wrap: wrap;
+      }
+      .legend {
+        display: none;
+      }
+      .tooltip {
+        min-width: 240px;
+        left: 50% !important;
+        top: auto !important;
+        bottom: 1rem !important;
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Cultural Diversity Index</h1>
+    <div class="controls">
+      <select class="metric-select" id="metricSelect">
+        <option value="fe_cultdiv">Cultural Diversity (Fearon)</option>
+        <option value="fe_etfra">Ethnic Fractionalization (Fearon)</option>
+        <option value="al_ethnic2000">Ethnic Fractionalization (Alesina)</option>
+        <option value="al_language2000">Linguistic Fractionalization (Alesina)</option>
+        <option value="al_religion2000">Religious Fractionalization (Alesina)</option>
+        <option value="composite">Composite Diversity Index</option>
+      </select>
+      <div class="legend">
+        <div class="legend-gradient"></div>
+        <div class="legend-labels">
+          <span>Low</span>
+          <span>High</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="map-container"></div>
+
+  <div class="tooltip" id="tooltip"></div>
+
+  <footer class="footer">
+    <div>Hover a country for details</div>
+    <div class="data-source">
+      <span>Data: </span>
+      <a href="https://www.qog.pol.gu.se/data" target="_blank">QoG Institute</a>
+      <span>·</span>
+      <a href="https://www.journals.uchicago.edu/doi/10.1086/368236" target="_blank">Fearon (2003)</a>
+      <span>·</span>
+      <a href="https://www.nber.org/papers/w9411" target="_blank">Alesina et al. (2003)</a>
+    </div>
+  </footer>
+
+  <script>
+    const METRICS = {
+      fe_cultdiv: { label: 'Cultural Diversity (Fearon)', desc: 'Accounts for cultural distances between groups via language structure' },
+      fe_etfra: { label: 'Ethnic Fractionalization (Fearon)', desc: 'Probability two random people belong to different ethnic groups' },
+      al_ethnic2000: { label: 'Ethnic Fractionalization (Alesina)', desc: 'Ethnic fractionalization from Encyclopaedia Britannica 2001' },
+      al_language2000: { label: 'Linguistic Fractionalization (Alesina)', desc: 'Probability two random people speak different languages' },
+      al_religion2000: { label: 'Religious Fractionalization (Alesina)', desc: 'Probability two random people have different religions' },
+      composite: { label: 'Composite Diversity Index', desc: 'Average of all five diversity measures (normalized)' }
+    };
+
+    let diversityData = {};
+    let currentMetric = 'fe_cultdiv';
+    let projection, path, svg, g;
+    let colorScale;
+    let worldTopology;
+
+    async function init() {
+      await Promise.all([
+        loadData(),
+        loadWorldMap()
+      ]);
+      setupMap();
+      setupEventListeners();
+      renderMap();
+    }
+
+    async function loadData() {
+      const response = await fetch('diversity_data.json');
+      const raw = await response.json();
+      
+      diversityData = {};
+      const allMetrics = ['fe_cultdiv', 'fe_etfra', 'fe_lmin', 'fe_plural', 'al_ethnic2000', 'al_language2000', 'al_religion2000'];
+      
+      for (const [code, entry] of Object.entries(raw)) {
+        const d = { name: entry.name };
+        let hasAny = false;
+        for (const m of allMetrics) {
+          if (entry[m] !== undefined) {
+            d[m] = entry[m];
+            hasAny = true;
+          }
+        }
+        if (hasAny) {
+          diversityData[code] = d;
+        }
+      }
+      
+      computeComposite();
+    }
+
+    function computeComposite() {
+      const metrics = ['fe_cultdiv', 'fe_etfra', 'al_ethnic2000', 'al_language2000', 'al_religion2000'];
+      const values = { };
+      metrics.forEach(m => values[m] = []);
+      
+      for (const d of Object.values(diversityData)) {
+        metrics.forEach(m => {
+          if (d[m] !== undefined) values[m].push(d[m]);
+        });
+      }
+      
+      const ranges = {};
+      metrics.forEach(m => {
+        const arr = values[m];
+        ranges[m] = { min: Math.min(...arr), max: Math.max(...arr) };
+      });
+      
+      for (const d of Object.values(diversityData)) {
+        let sum = 0, count = 0;
+        metrics.forEach(m => {
+          if (d[m] !== undefined) {
+            const norm = (d[m] - ranges[m].min) / (ranges[m].max - ranges[m].min);
+            sum += norm;
+            count++;
+          }
+        });
+        if (count > 0) {
+          d.composite = sum / count;
+        }
+      }
+    }
+
+    async function loadWorldMap() {
+      const response = await fetch('world-110m.json');
+      worldTopology = await response.json();
+    }
+
+    function setupMap() {
+      const container = document.getElementById('map-container');
+      const width = container.clientWidth;
+      const height = container.clientHeight;
+
+      projection = d3.geoNaturalEarth1()
+        .scale(width / 5.2)
+        .translate([width / 2, height / 2])
+        .precision(0.1);
+
+      path = d3.geoPath().projection(projection);
+
+      svg = d3.select('#map-container')
+        .append('svg')
+        .attr('width', width)
+        .attr('height', height);
+
+      g = svg.append('g');
+
+      window.addEventListener('resize', () => {
+        const w = container.clientWidth;
+        const h = container.clientHeight;
+        projection.scale(w / 5.2).translate([w / 2, h / 2]);
+        svg.attr('width', w).attr('height', h);
+        renderMap();
+      });
+    }
+
+    function setupEventListeners() {
+      document.getElementById('metricSelect').addEventListener('change', (e) => {
+        currentMetric = e.target.value;
+        updateColorScale();
+        renderMap();
+      });
+    }
+
+    function updateColorScale() {
+      let values = [];
+      for (const d of Object.values(diversityData)) {
+        if (d[currentMetric] !== undefined) {
+          values.push(d[currentMetric]);
+        }
+      }
+      const min = d3.min(values);
+      const max = d3.max(values);
+      
+      colorScale = d3.scaleSequential(d3.interpolateBlues)
+        .domain([min, max]);
+    }
+
+    function getCountryColor(code) {
+      const data = diversityData[code];
+      if (!data || data[currentMetric] === undefined) {
+        return '#0f172a';
+      }
+      return colorScale(data[currentMetric]);
+    }
+
+    function getCountryData(code) {
+      return diversityData[code];
+    }
+
+    function formatValue(val) {
+      if (val === undefined || val === null) return 'N/A';
+      return (val * 100).toFixed(1) + '%';
+    }
+
+    function formatDecimal(val) {
+      if (val === undefined || val === null) return 'N/A';
+      return val.toFixed(3);
+    }
+
+    function showTooltip(event, code) {
+      const data = getCountryData(code);
+      if (!data || data[currentMetric] === undefined) return;
+
+      const tooltip = document.getElementById('tooltip');
+      const metricInfo = METRICS[currentMetric];
+      
+      const stats = [];
+      if (data.fe_cultdiv !== undefined) stats.push({ label: 'Cultural Diversity', key: 'fe_cultdiv', pct: true });
+      if (data.fe_etfra !== undefined) stats.push({ label: 'Ethnic (Fearon)', key: 'fe_etfra', pct: true });
+      if (data.al_ethnic2000 !== undefined) stats.push({ label: 'Ethnic (Alesina)', key: 'al_ethnic2000', pct: true });
+      if (data.al_language2000 !== undefined) stats.push({ label: 'Linguistic', key: 'al_language2000', pct: true });
+      if (data.al_religion2000 !== undefined) stats.push({ label: 'Religious', key: 'al_religion2000', pct: true });
+      if (data.composite !== undefined) stats.push({ label: 'Composite', key: 'composite', pct: true });
+
+      const statHtml = stats.map(s => {
+        const val = data[s.key];
+        const pct = s.pct ? (val * 100).toFixed(1) : val.toFixed(3);
+        const width = s.pct ? (val * 100) : (val * 100);
+        return `
+          <div class="stat">
+            <div class="stat-label">${s.label}</div>
+            <div class="stat-value">${pct}${s.pct ? '%' : ''}</div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width: ${Math.min(100, width)}%"></div></div>
+          </div>
+        `;
+      }).join('');
+
+      tooltip.innerHTML = `
+        <div class="tooltip-header">
+          <div>
+            <div class="tooltip-country">${data.name}</div>
+            <div class="tooltip-metric">${metricInfo.label}</div>
+          </div>
+          <div class="tooltip-score">${formatValue(data[currentMetric])}</div>
+        </div>
+        <div class="tooltip-stats">${statHtml}</div>
+      `;
+
+      tooltip.classList.add('visible');
+      positionTooltip(event);
+    }
+
+    function positionTooltip(event) {
+      const tooltip = document.getElementById('tooltip');
+      const rect = tooltip.getBoundingClientRect();
+      const padding = 20;
+      
+      let left = event.clientX - rect.width / 2;
+      let top = event.clientY - rect.height - 20;
+
+      if (left < padding) left = padding;
+      if (left + rect.width > window.innerWidth - padding) {
+        left = window.innerWidth - rect.width - padding;
+      }
+      if (top < padding) {
+        top = event.clientY + 20;
+      }
+
+      tooltip.style.left = left + 'px';
+      tooltip.style.top = top + 'px';
+    }
+
+    function hideTooltip() {
+      document.getElementById('tooltip').classList.remove('visible');
+    }
+
+    function renderMap() {
+      if (!worldTopology) return;
+
+      const countries = topojson.feature(worldTopology, worldTopology.objects.countries).features;
+
+      updateColorScale();
+
+      const countryPaths = g.selectAll('.country')
+        .data(countries, d => d.id);
+
+      countryPaths.join(
+        enter => enter.append('path')
+          .attr('class', d => {
+            const code = isoNumericToAlpha3(d.id);
+            const data = diversityData[code];
+            return 'country' + (data && data[currentMetric] !== undefined ? '' : ' no-data');
+          })
+          .attr('d', path)
+          .attr('fill', d => getCountryColor(isoNumericToAlpha3(d.id)))
+          .on('mousemove', (event, d) => showTooltip(event, isoNumericToAlpha3(d.id)))
+          .on('mouseleave', hideTooltip)
+          .on('click', (event, d) => showTooltip(event, isoNumericToAlpha3(d.id))),
+        update => update
+          .attr('class', d => {
+            const code = isoNumericToAlpha3(d.id);
+            const data = diversityData[code];
+            return 'country' + (data && data[currentMetric] !== undefined ? '' : ' no-data');
+          })
+          .attr('fill', d => getCountryColor(isoNumericToAlpha3(d.id)))
+          .attr('d', path)
+      );
+
+      countryPaths.exit().remove();
+    }
+
+    function isoNumericToAlpha3(numeric) {
+      const map = {
+        4: 'AFG', 8: 'ALB', 10: 'ATA', 12: 'DZA', 16: 'ASM', 20: 'AND', 24: 'AGO', 28: 'ATG',
+        31: 'AZE', 32: 'ARG', 36: 'AUS', 40: 'AUT', 44: 'BHS', 48: 'BHR', 50: 'BGD', 51: 'ARM',
+        52: 'ABW', 56: 'BEL', 60: 'BMU', 64: 'BTN', 68: 'BOL', 70: 'BIH', 72: 'BWA', 74: 'BVT',
+        76: 'BRA', 84: 'BEL', 86: 'IOT', 90: 'WSM', 92: 'VGB', 96: 'BRN', 100: 'BGR', 104: 'BFA',
+        108: 'BDI', 112: 'BLR', 116: 'KHM', 120: 'CMR', 124: 'CAN', 132: 'CPV', 136: 'CYM',
+        140: 'CAF', 144: 'LKA', 148: 'TCD', 152: 'CHL', 156: 'CHN', 158: 'TWN', 162: 'CXR',
+        166: 'CCK', 170: 'COL', 174: 'COM', 175: 'MYT', 178: 'COG', 180: 'COD', 184: 'COK',
+        188: 'CRI', 191: 'HRV', 192: 'CUB', 196: 'CYM', 203: 'CZE', 204: 'BEN', 208: 'DNK',
+        212: 'DMA', 214: 'DOM', 218: 'ECU', 222: 'SLV', 226: 'GNQ', 231: 'ETH', 232: 'ERI',
+        233: 'EST', 234: 'FRO', 238: 'FLK', 242: 'FJI', 246: 'FIN', 250: 'FRA', 254: 'GUF',
+        258: 'PYF', 260: 'ATF', 262: 'DJI', 266: 'DMA', 268: 'GEO', 270: 'GMB', 275: 'PSE',
+        276: 'DEU', 288: 'GHA', 292: 'GIB', 296: 'GRL', 300: 'GRD', 304: 'GLP', 308: 'GUM',
+        320: 'GTM', 324: 'GIN', 328: 'GUY', 332: 'HTI', 334: 'HMD', 336: 'VAT', 340: 'HND',
+        344: 'HKG', 348: 'HUN', 352: 'ISL', 356: 'IND', 360: 'IDN', 364: 'IRN', 368: 'IRQ',
+        372: 'IRL', 376: 'ISR', 380: 'ITA', 384: 'CIV', 388: 'JAM', 392: 'JPN', 398: 'KAZ',
+        400: 'JOR', 404: 'KEN', 408: 'PRK', 410: 'KOR', 414: 'KWT', 417: 'KGZ', 418: 'LAO',
+        422: 'LBN', 426: 'LSO', 428: 'LVA', 430: 'LBR', 434: 'LBY', 438: 'LIE', 440: 'LTU',
+        442: 'LUX', 446: 'MAC', 450: 'MDG', 454: 'MWI', 458: 'MYS', 462: 'MDV', 466: 'MLI',
+        470: 'MLT', 474: 'MTQ', 478: 'MRT', 480: 'MUS', 484: 'MEX', 492: 'MCO', 496: 'MNG',
+        498: 'MDA', 499: 'MNE', 500: 'MSR', 504: 'MAR', 508: 'MOZ', 512: 'OMN', 516: 'NAM',
+        520: 'NRU', 524: 'NPL', 528: 'NLD', 531: 'ANT', 533: 'ABW', 534: 'SXM', 535: 'BES',
+        540: 'NCL', 548: 'VUT', 554: 'NZL', 558: 'NIC', 562: 'NER', 566: 'NGA', 570: 'NIU',
+        574: 'NFK', 578: 'NOR', 580: 'MNP', 581: 'UMI', 583: 'FSM', 584: 'MHL', 585: 'PLW',
+        586: 'PAK', 591: 'PAN', 598: 'PNG', 600: 'PRY', 604: 'PER', 608: 'PHL', 612: 'PCN',
+        616: 'POL', 620: 'PRT', 624: 'GNB', 626: 'TLS', 630: 'PRI', 634: 'QAT', 638: 'REU',
+        642: 'ROU', 643: 'RUS', 646: 'RWA', 652: 'BLM', 654: 'SHN', 659: 'KNA', 660: 'AIA',
+        662: 'LCA', 663: 'MAF', 666: 'SPM', 670: 'VCT', 674: 'SMR', 678: 'STP', 682: 'SAU',
+        686: 'SEN', 688: 'SRB', 690: 'SYC', 694: 'SLE', 702: 'SGP', 703: 'SVK', 704: 'VNM',
+        705: 'SVN', 706: 'SOM', 710: 'ZAF', 716: 'ZWE', 724: 'ESP', 728: 'SSD', 729: 'SDN',
+        732: 'ESH', 740: 'SUR', 744: 'SJM', 748: 'SWZ', 752: 'SWE', 756: 'CHE', 760: 'SYR',
+        762: 'TJK', 764: 'THA', 768: 'TGO', 772: 'TKL', 776: 'TON', 780: 'TTO', 784: 'ARE',
+        788: 'TUN', 792: 'TUR', 795: 'TKM', 796: 'TCA', 798: 'TUV', 800: 'UGA', 804: 'UKR',
+        807: 'MKD', 818: 'EGY', 826: 'GBR', 831: 'GIB', 832: 'GIB', 833: 'IMN', 834: 'TZA',
+        840: 'USA', 850: 'VIR', 854: 'BFA', 858: 'URY', 860: 'UZB', 862: 'VEN', 876: 'WLF',
+        882: 'WSM', 887: 'YEM', 891: 'CSK', 894: 'ZMB', 898: 'ZWE'
+      };
+      return map[numeric] || String(numeric);
+    }
+
+    init();
+  </script>
+</body>
+</html>

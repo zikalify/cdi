@@ -1,0 +1,1729 @@
+{
+  "AFG": {
+    "name": "Afghanistan",
+    "fe_cultdiv": 0.6792669892311096,
+    "fe_etfra": 0.7507970333099365,
+    "fe_lmin": 0.2529999911785126,
+    "fe_plural": 0.3799999952316284,
+    "al_ethnic2000": 0.7693445845406846,
+    "al_language2000": 0.6141462,
+    "al_religion2000": 0.2716839
+  },
+  "ALB": {
+    "name": "Albania",
+    "fe_cultdiv": 0.0818827152252197,
+    "fe_etfra": 0.0965999960899353,
+    "fe_lmin": 0.0299999993294477,
+    "fe_plural": 0.949999988079071,
+    "al_ethnic2000": 0.220426,
+    "al_language2000": 0.0399247999999999,
+    "al_religion2000": 0.4718516
+  },
+  "DZA": {
+    "name": "Algeria",
+    "fe_cultdiv": 0.2373762726783752,
+    "fe_etfra": 0.3199999928474426,
+    "fe_lmin": 0.2000000029802322,
+    "fe_plural": 0.800000011920929,
+    "al_ethnic2000": 0.3393999999999998,
+    "al_language2000": 0.4426619,
+    "al_religion2000": 0.0091285
+  },
+  "AND": {
+    "name": "Andorra",
+    "al_ethnic2000": 0.713946,
+    "al_language2000": 0.684785,
+    "al_religion2000": 0.2325685
+  },
+  "AGO": {
+    "name": "Angola",
+    "fe_cultdiv": 0.241886556148529,
+    "fe_etfra": 0.7560999989509583,
+    "fe_lmin": 0.2599999904632568,
+    "fe_plural": 0.3799999952316284,
+    "al_ethnic2000": 0.78672,
+    "al_language2000": 0.7870192,
+    "al_religion2000": 0.6276435
+  },
+  "ATG": {
+    "name": "Antigua and Barbuda",
+    "al_ethnic2000": 0.164256,
+    "al_language2000": 0.1063281,
+    "al_religion2000": 0.6839913
+  },
+  "AZE": {
+    "name": "Azerbaijan",
+    "fe_cultdiv": 0.1871907711029052,
+    "fe_etfra": 0.1875470280647277,
+    "fe_lmin": 0.0320000015199184,
+    "fe_plural": 0.8999999761581421,
+    "al_ethnic2000": 0.2046719999999999,
+    "al_language2000": 0.2053918999999999,
+    "al_religion2000": 0.4898947
+  },
+  "ARG": {
+    "name": "Argentina",
+    "fe_cultdiv": 0.0,
+    "fe_etfra": 0.2548999786376953,
+    "fe_lmin": 0.1500000059604644,
+    "fe_plural": 0.8500000238418579,
+    "al_ethnic2000": 0.255,
+    "al_language2000": 0.0617541999999999,
+    "al_religion2000": 0.2236207
+  },
+  "AUS": {
+    "name": "Australia",
+    "fe_cultdiv": 0.1465440392494201,
+    "fe_etfra": 0.1485039591789245,
+    "fe_lmin": 0.0700000002980232,
+    "fe_plural": 0.9200000166893004,
+    "al_ethnic2000": 0.0929019999999999,
+    "al_language2000": 0.3349497,
+    "al_religion2000": 0.8210855
+  },
+  "AUT": {
+    "name": "Austria",
+    "fe_cultdiv": 0.0995905995368957,
+    "fe_etfra": 0.125631034374237,
+    "fe_lmin": 0.0399999991059303,
+    "fe_plural": 0.9340000152587892,
+    "al_ethnic2000": 0.1067761823104125,
+    "al_language2000": 0.1521865999999999,
+    "al_religion2000": 0.4146217
+  },
+  "BHS": {
+    "name": "Bahamas (the)",
+    "al_ethnic2000": 0.422845142439737,
+    "al_language2000": 0.1854934999999999,
+    "al_religion2000": 0.6814594
+  },
+  "BHR": {
+    "name": "Bahrain",
+    "fe_cultdiv": 0.4598101377487182,
+    "fe_etfra": 0.550599992275238,
+    "fe_lmin": 0.1899999976158142,
+    "fe_plural": 0.6299999952316284,
+    "al_ethnic2000": 0.5021300000000001,
+    "al_language2000": 0.4343625,
+    "al_religion2000": 0.5528251
+  },
+  "BGD": {
+    "name": "Bangladesh",
+    "fe_cultdiv": 0.1411744952201843,
+    "fe_etfra": 0.2233499884605407,
+    "fe_lmin": 0.1049999967217445,
+    "fe_plural": 0.875,
+    "al_ethnic2000": 0.0454339999999999,
+    "al_language2000": 0.0924852,
+    "al_religion2000": 0.2090498
+  },
+  "ARM": {
+    "name": "Armenia",
+    "fe_cultdiv": 0.1241950392723083,
+    "fe_etfra": 0.1337999701499939,
+    "fe_lmin": 0.0299999993294477,
+    "fe_plural": 0.9300000071525574,
+    "al_ethnic2000": 0.1271540000000001,
+    "al_language2000": 0.1290535,
+    "al_religion2000": 0.4575609
+  },
+  "BRB": {
+    "name": "Barbados",
+    "al_ethnic2000": 0.1423419999999998,
+    "al_language2000": 0.0926369,
+    "al_religion2000": 0.6934029
+  },
+  "BEL": {
+    "name": "Belgium",
+    "fe_cultdiv": 0.4617581367492676,
+    "fe_etfra": 0.5670000314712524,
+    "fe_lmin": 0.3100000023841858,
+    "fe_plural": 0.5799999833106995,
+    "al_ethnic2000": 0.5554,
+    "al_language2000": 0.5408843999999999,
+    "al_religion2000": 0.2126811
+  },
+  "BTN": {
+    "name": "Bhutan",
+    "fe_cultdiv": 0.5183974504470825,
+    "fe_etfra": 0.6050000190734863,
+    "fe_lmin": 0.3499999940395355,
+    "fe_plural": 0.5,
+    "al_ethnic2000": 0.605,
+    "al_language2000": 0.6056015,
+    "al_religion2000": 0.3787035
+  },
+  "BOL": {
+    "name": "Bolivia (Plurinational State of)",
+    "fe_cultdiv": 0.6621999740600586,
+    "fe_etfra": 0.743399977684021,
+    "fe_lmin": 0.2899999916553497,
+    "fe_plural": 0.3000000119209289,
+    "al_ethnic2000": 0.7396250600865246,
+    "al_language2000": 0.2239818999999999,
+    "al_religion2000": 0.2084686
+  },
+  "BIH": {
+    "name": "Bosnia and Herzegovina",
+    "fe_cultdiv": 0.1462240219116211,
+    "fe_etfra": 0.6805059909820557,
+    "fe_lmin": 0.3140000104904175,
+    "fe_plural": 0.4370000064373016,
+    "al_ethnic2000": 0.630038,
+    "al_language2000": 0.6751031000000001,
+    "al_religion2000": 0.6850857
+  },
+  "BWA": {
+    "name": "Botswana",
+    "fe_cultdiv": 0.1614864468574524,
+    "fe_etfra": 0.3513000011444092,
+    "fe_lmin": 0.0799999982118606,
+    "fe_plural": 0.800000011920929,
+    "al_ethnic2000": 0.410248,
+    "al_language2000": 0.4109726999999999,
+    "al_religion2000": 0.5986193
+  },
+  "BRA": {
+    "name": "Brazil",
+    "fe_cultdiv": 0.0199000239372253,
+    "fe_etfra": 0.5494999885559082,
+    "fe_lmin": 0.3799999952316284,
+    "fe_plural": 0.550000011920929,
+    "al_ethnic2000": 0.540836,
+    "al_language2000": 0.0468442999999999,
+    "al_religion2000": 0.6054302
+  },
+  "BLZ": {
+    "name": "Belize",
+    "al_ethnic2000": 0.70154,
+    "al_language2000": 0.6302864,
+    "al_religion2000": 0.5812932
+  },
+  "SLB": {
+    "name": "Solomon Islands",
+    "al_ethnic2000": 0.1110219999999998,
+    "al_language2000": 0.5254308999999999,
+    "al_religion2000": 0.6708081
+  },
+  "BRN": {
+    "name": "Brunei Darussalam",
+    "al_ethnic2000": 0.5416,
+    "al_language2000": 0.3437907999999999,
+    "al_religion2000": 0.4404053
+  },
+  "BGR": {
+    "name": "Bulgaria",
+    "fe_cultdiv": 0.2499014735221862,
+    "fe_etfra": 0.2994851469993591,
+    "fe_lmin": 0.0939999967813491,
+    "fe_plural": 0.8299999833106995,
+    "al_ethnic2000": 0.4021141144140575,
+    "al_language2000": 0.3030912999999999,
+    "al_religion2000": 0.5965012
+  },
+  "MMR": {
+    "name": "Myanmar",
+    "fe_cultdiv": 0.4194981455802917,
+    "fe_etfra": 0.5215089917182922,
+    "fe_lmin": 0.0850000008940696,
+    "fe_plural": 0.6800000071525574,
+    "al_ethnic2000": 0.5061860000000001,
+    "al_language2000": 0.5072459,
+    "al_religion2000": 0.1973855
+  },
+  "BDI": {
+    "name": "Burundi",
+    "fe_cultdiv": 0.0395999550819397,
+    "fe_etfra": 0.3276000022888183,
+    "fe_lmin": 0.1800000071525573,
+    "fe_plural": 0.800000011920929,
+    "al_ethnic2000": 0.2951440000000001,
+    "al_language2000": 0.2976615,
+    "al_religion2000": 0.5158263
+  },
+  "BLR": {
+    "name": "Belarus",
+    "fe_cultdiv": 0.2277323603630066,
+    "fe_etfra": 0.3716540336608886,
+    "fe_lmin": 0.1319999992847442,
+    "fe_plural": 0.7799999713897705,
+    "al_ethnic2000": 0.3221839999999999,
+    "al_language2000": 0.4666067,
+    "al_religion2000": 0.6116207
+  },
+  "KHM": {
+    "name": "Cambodia",
+    "fe_cultdiv": 0.1501003503799438,
+    "fe_etfra": 0.1862500309944152,
+    "fe_lmin": 0.0549999997019767,
+    "fe_plural": 0.8999999761581421,
+    "al_ethnic2000": 0.2104640000000001,
+    "al_language2000": 0.2104394,
+    "al_religion2000": 0.0964534
+  },
+  "CMR": {
+    "name": "Cameroon",
+    "fe_cultdiv": 0.732835590839386,
+    "fe_etfra": 0.8866750001907349,
+    "fe_lmin": 0.1500000059604644,
+    "fe_plural": 0.1800000071525573,
+    "al_ethnic2000": 0.86349,
+    "al_language2000": 0.8897894,
+    "al_religion2000": 0.7337534
+  },
+  "CAN": {
+    "name": "Canada",
+    "fe_cultdiv": 0.4989453554153442,
+    "fe_etfra": 0.5963400602340698,
+    "fe_lmin": 0.2300000041723251,
+    "fe_plural": 0.5899999737739563,
+    "al_ethnic2000": 0.71242,
+    "al_language2000": 0.5771839000000001,
+    "al_religion2000": 0.6957678
+  },
+  "CPV": {
+    "name": "Cabo Verde",
+    "al_ethnic2000": 0.4174,
+    "al_religion2000": 0.0766164
+  },
+  "CAF": {
+    "name": "Central African Republic (the)",
+    "fe_cultdiv": 0.5106638669967651,
+    "fe_etfra": 0.7906500101089478,
+    "fe_lmin": 0.2899999916553497,
+    "fe_plural": 0.3100000023841858,
+    "al_ethnic2000": 0.82951,
+    "al_language2000": 0.8333870999999999,
+    "al_religion2000": 0.7916332
+  },
+  "LKA": {
+    "name": "Sri Lanka",
+    "fe_cultdiv": 0.3863509893417358,
+    "fe_etfra": 0.4284709692001343,
+    "fe_lmin": 0.1199999973177909,
+    "fe_plural": 0.7400000095367432,
+    "al_ethnic2000": 0.415,
+    "al_language2000": 0.4644557,
+    "al_religion2000": 0.4852962
+  },
+  "TCD": {
+    "name": "Chad",
+    "fe_cultdiv": 0.7274453639984131,
+    "fe_etfra": 0.7724820375442505,
+    "fe_lmin": 0.3199999928474426,
+    "fe_plural": 0.3400000035762787,
+    "al_ethnic2000": 0.8620160000000001,
+    "al_language2000": 0.8635250999999999,
+    "al_religion2000": 0.6410788
+  },
+  "CHL": {
+    "name": "Chile",
+    "fe_cultdiv": 0.1669999361038208,
+    "fe_etfra": 0.496999979019165,
+    "fe_lmin": 0.25,
+    "fe_plural": 0.6600000262260437,
+    "al_ethnic2000": 0.1861459999999999,
+    "al_language2000": 0.1870760999999999,
+    "al_religion2000": 0.3841057
+  },
+  "CHN": {
+    "name": "China",
+    "fe_cultdiv": 0.1535999774932861,
+    "fe_etfra": 0.1535999774932861,
+    "fe_plural": 0.9200000166893004,
+    "al_ethnic2000": 0.1537903400000001,
+    "al_language2000": 0.1326977,
+    "al_religion2000": 0.6642963
+  },
+  "TWN": {
+    "name": "Taiwan (Province of China)",
+    "fe_cultdiv": 0.169215440750122,
+    "fe_etfra": 0.2744000554084778,
+    "fe_lmin": 0.1400000005960464,
+    "fe_plural": 0.8399999737739563,
+    "al_ethnic2000": 0.2744000000000002,
+    "al_language2000": 0.5027927,
+    "al_religion2000": 0.6844943
+  },
+  "COL": {
+    "name": "Colombia",
+    "fe_cultdiv": 0.0198000073432922,
+    "fe_etfra": 0.656000018119812,
+    "fe_lmin": 0.25,
+    "fe_plural": 0.5,
+    "al_ethnic2000": 0.6014,
+    "al_language2000": 0.0192681999999999,
+    "al_religion2000": 0.1478351
+  },
+  "COM": {
+    "name": "Comoros (the)",
+    "al_ethnic2000": 0.0,
+    "al_language2000": 0.0102913,
+    "al_religion2000": 0.0137451
+  },
+  "COG": {
+    "name": "Congo (the)",
+    "fe_cultdiv": 0.5616531372070312,
+    "fe_etfra": 0.8776999711990356,
+    "fe_lmin": 0.1899999976158142,
+    "fe_plural": 0.209999993443489,
+    "al_ethnic2000": 0.874726,
+    "al_language2000": 0.6871037,
+    "al_religion2000": 0.6642361
+  },
+  "COD": {
+    "name": "Congo (the Democratic Republic of the)",
+    "fe_cultdiv": 0.6282387375831604,
+    "fe_etfra": 0.9325550198554992,
+    "fe_lmin": 0.1030000001192092,
+    "fe_plural": 0.1599999964237213,
+    "al_ethnic2000": 0.874726,
+    "al_language2000": 0.8704723,
+    "al_religion2000": 0.702141
+  },
+  "CRI": {
+    "name": "Costa Rica",
+    "fe_cultdiv": 0.0781999826431274,
+    "fe_etfra": 0.2375999689102172,
+    "fe_lmin": 0.0700000002980232,
+    "fe_plural": 0.8700000047683716,
+    "al_ethnic2000": 0.2368,
+    "al_language2000": 0.0489116,
+    "al_religion2000": 0.2409582
+  },
+  "HRV": {
+    "name": "Croatia",
+    "fe_cultdiv": 0.184590995311737,
+    "fe_etfra": 0.375154972076416,
+    "fe_lmin": 0.1220000013709068,
+    "fe_plural": 0.781000018119812,
+    "al_ethnic2000": 0.3690259999999999,
+    "al_language2000": 0.0762838999999999,
+    "al_religion2000": 0.4447331
+  },
+  "CUB": {
+    "name": "Cuba",
+    "fe_cultdiv": 0.0198000073432922,
+    "fe_etfra": 0.2134000062942505,
+    "fe_lmin": 0.1099999994039535,
+    "fe_plural": 0.8799999952316284,
+    "al_ethnic2000": 0.5908,
+    "al_religion2000": 0.5059358
+  },
+  "CYP": {
+    "name": "Cyprus",
+    "fe_cultdiv": 0.3592000603675842,
+    "fe_etfra": 0.3592000603675842,
+    "fe_lmin": 0.1800000071525573,
+    "fe_plural": 0.7799999713897705,
+    "al_ethnic2000": 0.0938540000000001,
+    "al_language2000": 0.3961601,
+    "al_religion2000": 0.3961601
+  },
+  "CZE": {
+    "name": "Czechia",
+    "fe_cultdiv": 0.0639126896858215,
+    "fe_etfra": 0.3215950131416321,
+    "fe_lmin": 0.1319999992847442,
+    "fe_plural": 0.8119999766349792,
+    "al_ethnic2000": 0.3221639999999998,
+    "al_language2000": 0.323343,
+    "al_religion2000": 0.6590906
+  },
+  "BEN": {
+    "name": "Benin",
+    "fe_cultdiv": 0.3996506333351135,
+    "fe_etfra": 0.6222779750823975,
+    "fe_lmin": 0.2249999940395355,
+    "fe_plural": 0.5550000071525574,
+    "al_ethnic2000": 0.787216,
+    "al_language2000": 0.7905251,
+    "al_religion2000": 0.5543994
+  },
+  "DNK": {
+    "name": "Denmark",
+    "fe_cultdiv": 0.1275439262390136,
+    "fe_etfra": 0.1275439858436584,
+    "fe_lmin": 0.0099999997764825,
+    "fe_plural": 0.9340000152587892,
+    "al_ethnic2000": 0.08186,
+    "al_language2000": 0.1049465,
+    "al_religion2000": 0.2333039
+  },
+  "DMA": {
+    "name": "Dominica",
+    "al_ethnic2000": 0.2002620000000001,
+    "al_religion2000": 0.4628099
+  },
+  "DOM": {
+    "name": "Dominican Republic (the)",
+    "fe_cultdiv": 0.0,
+    "fe_etfra": 0.3867999911308288,
+    "fe_lmin": 0.1599999964237213,
+    "fe_plural": 0.7599999904632568,
+    "al_ethnic2000": 0.4294000000000001,
+    "al_language2000": 0.0394729,
+    "al_religion2000": 0.3118443
+  },
+  "ECU": {
+    "name": "Ecuador",
+    "fe_cultdiv": 0.4800000190734863,
+    "fe_etfra": 0.6549999713897705,
+    "fe_lmin": 0.4000000059604645,
+    "fe_plural": 0.4000000059604645,
+    "al_ethnic2000": 0.655,
+    "al_language2000": 0.1308116,
+    "al_religion2000": 0.1417125
+  },
+  "SLV": {
+    "name": "El Salvador",
+    "fe_cultdiv": 0.1800000667572021,
+    "fe_etfra": 0.1978000402450561,
+    "fe_lmin": 0.1000000014901161,
+    "fe_plural": 0.8899999856948853,
+    "al_ethnic2000": 0.1977999999999999,
+    "al_religion2000": 0.3558834
+  },
+  "GNQ": {
+    "name": "Equatorial Guinea",
+    "al_ethnic2000": 0.3467,
+    "al_language2000": 0.3220486,
+    "al_religion2000": 0.1195111
+  },
+  "ETH": {
+    "name": "Ethiopia",
+    "fe_cultdiv": 0.5615501403808594,
+    "fe_etfra": 0.7602660059928894,
+    "fe_lmin": 0.25,
+    "fe_plural": 0.4000000059604645,
+    "al_ethnic2000": 0.723472,
+    "al_language2000": 0.8073233,
+    "al_religion2000": 0.624868
+  },
+  "ERI": {
+    "name": "Eritrea",
+    "fe_cultdiv": 0.3982008099555969,
+    "fe_etfra": 0.6468000411987305,
+    "fe_lmin": 0.3100000023841858,
+    "fe_plural": 0.5,
+    "al_ethnic2000": 0.6524,
+    "al_language2000": 0.6530491,
+    "al_religion2000": 0.4253191
+  },
+  "EST": {
+    "name": "Estonia",
+    "fe_cultdiv": 0.4919529557228088,
+    "fe_etfra": 0.5110499858856201,
+    "fe_lmin": 0.2800000011920929,
+    "fe_plural": 0.6399999856948853,
+    "al_ethnic2000": 0.50617,
+    "al_language2000": 0.4944277,
+    "al_religion2000": 0.4984568
+  },
+  "FJI": {
+    "name": "Fiji",
+    "fe_cultdiv": 0.5532823801040649,
+    "fe_etfra": 0.5657309293746948,
+    "fe_lmin": 0.4399999976158142,
+    "fe_plural": 0.4900000095367431,
+    "al_ethnic2000": 0.5479419999999999,
+    "al_language2000": 0.547909,
+    "al_religion2000": 0.5681994
+  },
+  "FIN": {
+    "name": "Finland",
+    "fe_cultdiv": 0.1315000057220459,
+    "fe_etfra": 0.1315000057220459,
+    "fe_lmin": 0.0599999986588954,
+    "fe_plural": 0.9300000071525574,
+    "al_ethnic2000": 0.1314973099999998,
+    "al_language2000": 0.1412075,
+    "al_religion2000": 0.2531044
+  },
+  "FRA": {
+    "name": "France",
+    "fe_cultdiv": 0.2505660057067871,
+    "fe_etfra": 0.2720739841461181,
+    "fe_lmin": 0.0549999997019767,
+    "fe_plural": 0.8500000238418579,
+    "al_ethnic2000": 0.1032168408080314,
+    "al_language2000": 0.1220980999999999,
+    "al_religion2000": 0.4028581
+  },
+  "DJI": {
+    "name": "Djibouti",
+    "fe_cultdiv": 0.40438973903656,
+    "fe_etfra": 0.6058000326156616,
+    "fe_lmin": 0.3700000047683716,
+    "fe_plural": 0.5,
+    "al_ethnic2000": 0.796166,
+    "al_language2000": 0.6558025000000001,
+    "al_religion2000": 0.0434568
+  },
+  "GAB": {
+    "name": "Gabon",
+    "fe_cultdiv": 0.3821158409118652,
+    "fe_etfra": 0.8574999570846558,
+    "fe_lmin": 0.1500000059604644,
+    "fe_plural": 0.3000000119209289,
+    "al_ethnic2000": 0.7689600000000001,
+    "al_language2000": 0.7820833,
+    "al_religion2000": 0.6674408
+  },
+  "GEO": {
+    "name": "Georgia",
+    "fe_cultdiv": 0.403795063495636,
+    "fe_etfra": 0.4901257753372192,
+    "fe_lmin": 0.0810000002384185,
+    "fe_plural": 0.7009999752044678,
+    "al_ethnic2000": 0.4922740000000002,
+    "al_language2000": 0.474852,
+    "al_religion2000": 0.6542991
+  },
+  "GMB": {
+    "name": "Gambia (the)",
+    "fe_cultdiv": 0.5480590462684631,
+    "fe_etfra": 0.7640789747238159,
+    "fe_lmin": 0.1800000071525573,
+    "fe_plural": 0.4099999964237213,
+    "al_ethnic2000": 0.786402,
+    "al_language2000": 0.8076314,
+    "al_religion2000": 0.0969684
+  },
+  "DEU": {
+    "name": "Germany",
+    "fe_cultdiv": 0.0900120735168457,
+    "fe_etfra": 0.0949230194091796,
+    "fe_lmin": 0.0240000002086162,
+    "fe_plural": 0.9509999752044678,
+    "al_ethnic2000": 0.168202,
+    "al_language2000": 0.1642306,
+    "al_religion2000": 0.6571196
+  },
+  "GHA": {
+    "name": "Ghana",
+    "fe_cultdiv": 0.3877981901168823,
+    "fe_etfra": 0.8460500240325928,
+    "fe_lmin": 0.1500000059604644,
+    "fe_plural": 0.2800000011920929,
+    "al_ethnic2000": 0.673332,
+    "al_language2000": 0.6730879000000001,
+    "al_religion2000": 0.7986752
+  },
+  "KIR": {
+    "name": "Kiribati",
+    "al_ethnic2000": 0.0510539999999997,
+    "al_language2000": 0.0236724999999999,
+    "al_religion2000": 0.5541115
+  },
+  "GRC": {
+    "name": "Greece",
+    "fe_cultdiv": 0.050151526927948,
+    "fe_etfra": 0.0586669445037841,
+    "fe_lmin": 0.0170000009238719,
+    "fe_plural": 0.9700000286102296,
+    "al_ethnic2000": 0.1576300998479137,
+    "al_language2000": 0.0299515,
+    "al_religion2000": 0.1530306
+  },
+  "GRD": {
+    "name": "Grenada",
+    "al_ethnic2000": 0.2661339999999998,
+    "al_religion2000": 0.5897732
+  },
+  "GTM": {
+    "name": "Guatemala",
+    "fe_cultdiv": 0.4927999973297119,
+    "fe_etfra": 0.4927999973297119,
+    "fe_lmin": 0.4399999976158142,
+    "fe_plural": 0.5600000023841858,
+    "al_ethnic2000": 0.5122,
+    "al_language2000": 0.4585926999999999,
+    "al_religion2000": 0.3753242
+  },
+  "GIN": {
+    "name": "Guinea",
+    "fe_cultdiv": 0.4897199869155884,
+    "fe_etfra": 0.6691000461578369,
+    "fe_lmin": 0.2800000011920929,
+    "fe_plural": 0.4799999892711639,
+    "al_ethnic2000": 0.738942,
+    "al_language2000": 0.7725216,
+    "al_religion2000": 0.2648523
+  },
+  "GUY": {
+    "name": "Guyana",
+    "fe_cultdiv": 0.4600830674171448,
+    "fe_etfra": 0.6195629835128784,
+    "fe_lmin": 0.356000006198883,
+    "fe_plural": 0.4939999878406524,
+    "al_ethnic2000": 0.6194979999999999,
+    "al_language2000": 0.0688035999999999,
+    "al_religion2000": 0.7875918
+  },
+  "HTI": {
+    "name": "Haiti",
+    "fe_cultdiv": 0.0,
+    "fe_etfra": 0.0950000286102294,
+    "fe_lmin": 0.050000000745058,
+    "fe_plural": 0.949999988079071,
+    "al_ethnic2000": 0.095,
+    "al_religion2000": 0.4703656
+  },
+  "HND": {
+    "name": "Honduras",
+    "fe_cultdiv": 0.167011022567749,
+    "fe_etfra": 0.1850110292434692,
+    "fe_lmin": 0.06700000166893,
+    "fe_plural": 0.8999999761581421,
+    "al_ethnic2000": 0.1866999999999999,
+    "al_language2000": 0.055289,
+    "al_religion2000": 0.2357165
+  },
+  "HUN": {
+    "name": "Hungary",
+    "fe_cultdiv": 0.184967815876007,
+    "fe_etfra": 0.1864240169525146,
+    "fe_lmin": 0.050000000745058,
+    "fe_plural": 0.8999999761581421,
+    "al_ethnic2000": 0.1522,
+    "al_language2000": 0.0296651999999999,
+    "al_religion2000": 0.524375
+  },
+  "ISL": {
+    "name": "Iceland",
+    "al_ethnic2000": 0.0797959999999997,
+    "al_language2000": 0.0820408999999999,
+    "al_religion2000": 0.1913265
+  },
+  "IND": {
+    "name": "India",
+    "fe_cultdiv": 0.6665176153182983,
+    "fe_etfra": 0.8109886050224304,
+    "fe_lmin": 0.0821999981999397,
+    "fe_plural": 0.3989999890327453,
+    "al_ethnic2000": 0.4182,
+    "al_language2000": 0.8069049,
+    "al_religion2000": 0.3260226
+  },
+  "IDN": {
+    "name": "Indonesia",
+    "fe_cultdiv": 0.522453784942627,
+    "fe_etfra": 0.7657838463783264,
+    "fe_lmin": 0.1480000019073486,
+    "fe_plural": 0.449999988079071,
+    "al_ethnic2000": 0.7351340000000001,
+    "al_language2000": 0.7679988,
+    "al_religion2000": 0.2340266
+  },
+  "IRN": {
+    "name": "Iran (Islamic Republic of)",
+    "fe_cultdiv": 0.5416987538337708,
+    "fe_etfra": 0.6687999963760376,
+    "fe_lmin": 0.2399999946355819,
+    "fe_plural": 0.5099999904632568,
+    "al_ethnic2000": 0.6683999999999999,
+    "al_language2000": 0.7462229,
+    "al_religion2000": 0.1151954
+  },
+  "IRQ": {
+    "name": "Iraq",
+    "fe_cultdiv": 0.3552109599113464,
+    "fe_etfra": 0.5489610433578491,
+    "fe_lmin": 0.1899999976158142,
+    "fe_plural": 0.625,
+    "al_ethnic2000": 0.3689100000000002,
+    "al_language2000": 0.3694473,
+    "al_religion2000": 0.4843678
+  },
+  "IRL": {
+    "name": "Ireland",
+    "fe_cultdiv": 0.1569023728370666,
+    "fe_etfra": 0.1709999442100525,
+    "fe_lmin": 0.0299999993294477,
+    "fe_plural": 0.9100000262260436,
+    "al_ethnic2000": 0.1206349999999999,
+    "al_language2000": 0.0312421,
+    "al_religion2000": 0.1549789
+  },
+  "ISR": {
+    "name": "Israel",
+    "fe_cultdiv": 0.2457113265991211,
+    "fe_etfra": 0.5255329608917236,
+    "fe_lmin": 0.2169999927282333,
+    "fe_plural": 0.6370000243186951,
+    "al_ethnic2000": 0.3435937226940686,
+    "al_language2000": 0.5524736,
+    "al_religion2000": 0.3468543
+  },
+  "ITA": {
+    "name": "Italy",
+    "fe_cultdiv": 0.0395999550819397,
+    "fe_etfra": 0.0395999550819397,
+    "fe_plural": 0.9800000190734864,
+    "al_ethnic2000": 0.1145190000000001,
+    "al_language2000": 0.1146823,
+    "al_religion2000": 0.3026566
+  },
+  "CIV": {
+    "name": "C\u00f4te d'Ivoire",
+    "fe_cultdiv": 0.5574506521224976,
+    "fe_etfra": 0.7838000059127808,
+    "fe_lmin": 0.2000000029802322,
+    "fe_plural": 0.3600000143051147,
+    "al_ethnic2000": 0.8204240000000002,
+    "al_language2000": 0.784203,
+    "al_religion2000": 0.7551077
+  },
+  "JAM": {
+    "name": "Jamaica",
+    "fe_cultdiv": 0.0269429087638854,
+    "fe_etfra": 0.1664019227027893,
+    "fe_lmin": 0.0729999989271164,
+    "fe_plural": 0.9100000262260436,
+    "al_ethnic2000": 0.4128940000000001,
+    "al_language2000": 0.1098046,
+    "al_religion2000": 0.6159606
+  },
+  "JPN": {
+    "name": "Japan",
+    "fe_cultdiv": 0.0119639635086059,
+    "fe_etfra": 0.0119639635086059,
+    "fe_plural": 0.9940000176429749,
+    "al_ethnic2000": 0.0119279999999997,
+    "al_language2000": 0.0177716,
+    "al_religion2000": 0.5406345
+  },
+  "KAZ": {
+    "name": "Kazakhstan",
+    "fe_cultdiv": 0.6197431683540344,
+    "fe_etfra": 0.6643589735031128,
+    "fe_lmin": 0.3580000102519989,
+    "fe_plural": 0.449999988079071,
+    "al_ethnic2000": 0.617122,
+    "al_language2000": 0.6620897,
+    "al_religion2000": 0.5898463
+  },
+  "JOR": {
+    "name": "Jordan",
+    "fe_cultdiv": 0.049174964427948,
+    "fe_etfra": 0.5091750025749207,
+    "fe_lmin": 0.4000000059604645,
+    "fe_plural": 0.574999988079071,
+    "al_ethnic2000": 0.5926,
+    "al_language2000": 0.0395558,
+    "al_religion2000": 0.0659424
+  },
+  "KEN": {
+    "name": "Kenya",
+    "fe_cultdiv": 0.6010639071464539,
+    "fe_etfra": 0.8520439863204956,
+    "fe_lmin": 0.1400000005960464,
+    "fe_plural": 0.2800000011920929,
+    "al_ethnic2000": 0.8588,
+    "al_language2000": 0.8860157,
+    "al_religion2000": 0.776517
+  },
+  "PRK": {
+    "name": "Korea (the Democratic People's Republic of)",
+    "fe_cultdiv": 0.0019989609718322,
+    "fe_etfra": 0.0019989609718322,
+    "fe_plural": 0.9990000128746032,
+    "al_ethnic2000": 0.0392000000000001,
+    "al_language2000": 0.0027637,
+    "al_religion2000": 0.4891185
+  },
+  "KOR": {
+    "name": "Korea (the Republic of)",
+    "fe_cultdiv": 0.0039959549903869,
+    "fe_etfra": 0.0039959549903869,
+    "fe_plural": 0.9980000257492064,
+    "al_ethnic2000": 0.0019979999999997,
+    "al_language2000": 0.0021132,
+    "al_religion2000": 0.6603648
+  },
+  "KWT": {
+    "name": "Kuwait",
+    "fe_cultdiv": 0.5396364331245422,
+    "fe_etfra": 0.7084000110626221,
+    "fe_lmin": 0.3000000119209289,
+    "fe_plural": 0.4000000059604645,
+    "al_ethnic2000": 0.6604,
+    "al_language2000": 0.3444357,
+    "al_religion2000": 0.674472
+  },
+  "KGZ": {
+    "name": "Kyrgyzstan",
+    "fe_cultdiv": 0.6238040924072266,
+    "fe_etfra": 0.6793580055236816,
+    "fe_lmin": 0.1800000071525573,
+    "fe_plural": 0.5199999809265137,
+    "al_ethnic2000": 0.675182,
+    "al_language2000": 0.5949289,
+    "al_religion2000": 0.4469888
+  },
+  "LAO": {
+    "name": "Lao People's Democratic Republic (the)",
+    "fe_cultdiv": 0.0199000239372253,
+    "fe_etfra": 0.4810999631881714,
+    "fe_lmin": 0.2199999988079071,
+    "fe_plural": 0.6800000071525574,
+    "al_ethnic2000": 0.513862,
+    "al_language2000": 0.6382066,
+    "al_religion2000": 0.5452628
+  },
+  "LBN": {
+    "name": "Lebanon",
+    "fe_cultdiv": 0.1945123672485351,
+    "fe_etfra": 0.7799000144004822,
+    "fe_lmin": 0.25,
+    "fe_plural": 0.3199999928474426,
+    "al_ethnic2000": 0.1313999999999998,
+    "al_language2000": 0.1312225,
+    "al_religion2000": 0.7886458
+  },
+  "LSO": {
+    "name": "Lesotho",
+    "fe_cultdiv": 0.0574778318405151,
+    "fe_etfra": 0.2549999356269836,
+    "fe_lmin": 0.1500000059604644,
+    "fe_plural": 0.8500000238418579,
+    "al_ethnic2000": 0.255,
+    "al_language2000": 0.2543454,
+    "al_religion2000": 0.721111
+  },
+  "LVA": {
+    "name": "Latvia",
+    "fe_cultdiv": 0.4405497908592224,
+    "fe_etfra": 0.5850499868392944,
+    "fe_lmin": 0.3039999902248382,
+    "fe_plural": 0.5649999976158142,
+    "al_ethnic2000": 0.586668,
+    "al_language2000": 0.5795139,
+    "al_religion2000": 0.555566
+  },
+  "LBR": {
+    "name": "Liberia",
+    "fe_cultdiv": 0.6436871886253357,
+    "fe_etfra": 0.8991820216178894,
+    "fe_lmin": 0.1599999964237213,
+    "fe_plural": 0.209999993443489,
+    "al_ethnic2000": 0.908388,
+    "al_language2000": 0.9037815,
+    "al_religion2000": 0.4883031
+  },
+  "LBY": {
+    "name": "Libya",
+    "fe_cultdiv": 0.1273456811904907,
+    "fe_etfra": 0.1510999798774719,
+    "fe_lmin": 0.050000000745058,
+    "fe_plural": 0.9200000166893004,
+    "al_ethnic2000": 0.79203,
+    "al_language2000": 0.0757887,
+    "al_religion2000": 0.0569851
+  },
+  "LIE": {
+    "name": "Liechtenstein",
+    "al_ethnic2000": 0.5726100000000001,
+    "al_language2000": 0.2246093999999999,
+    "al_religion2000": 0.3342515
+  },
+  "LTU": {
+    "name": "Lithuania",
+    "fe_cultdiv": 0.2591230869293213,
+    "fe_etfra": 0.3376390337944031,
+    "fe_lmin": 0.0869999974966049,
+    "fe_plural": 0.8059999942779541,
+    "al_ethnic2000": 0.3222700000000001,
+    "al_language2000": 0.3219138,
+    "al_religion2000": 0.4141271
+  },
+  "LUX": {
+    "name": "Luxembourg",
+    "al_ethnic2000": 0.5302380000000001,
+    "al_language2000": 0.6439541,
+    "al_religion2000": 0.0910954
+  },
+  "MDG": {
+    "name": "Madagascar",
+    "fe_cultdiv": 0.191514790058136,
+    "fe_etfra": 0.8614820241928101,
+    "fe_lmin": 0.1500000059604644,
+    "fe_plural": 0.270000010728836,
+    "al_ethnic2000": 0.8791000000000001,
+    "al_language2000": 0.020432,
+    "al_religion2000": 0.5190879
+  },
+  "MWI": {
+    "name": "Malawi",
+    "fe_cultdiv": 0.2937794923782348,
+    "fe_etfra": 0.8288999795913696,
+    "fe_lmin": 0.1899999976158142,
+    "fe_plural": 0.2800000011920929,
+    "al_ethnic2000": 0.6744,
+    "al_language2000": 0.6023255000000001,
+    "al_religion2000": 0.8191763
+  },
+  "MYS": {
+    "name": "Malaysia",
+    "fe_cultdiv": 0.5642824172973633,
+    "fe_etfra": 0.5956299304962158,
+    "fe_lmin": 0.2540000081062317,
+    "fe_plural": 0.5770000219345093,
+    "al_ethnic2000": 0.5879619999999999,
+    "al_language2000": 0.5969522,
+    "al_religion2000": 0.6656884
+  },
+  "MLI": {
+    "name": "Mali",
+    "fe_cultdiv": 0.5900802612304688,
+    "fe_etfra": 0.754351019859314,
+    "fe_lmin": 0.1500000059604644,
+    "fe_plural": 0.4300000071525574,
+    "al_ethnic2000": 0.6906,
+    "al_language2000": 0.838758,
+    "al_religion2000": 0.1819978
+  },
+  "MLT": {
+    "name": "Malta",
+    "al_ethnic2000": 0.04143221074438,
+    "al_language2000": 0.0906909999999999,
+    "al_religion2000": 0.1223239
+  },
+  "MRT": {
+    "name": "Mauritania",
+    "fe_cultdiv": 0.2718999981880188,
+    "fe_etfra": 0.624500036239624,
+    "fe_lmin": 0.4099999964237213,
+    "fe_plural": 0.4300000071525574,
+    "al_ethnic2000": 0.615,
+    "al_language2000": 0.3259653,
+    "al_religion2000": 0.0148691
+  },
+  "MUS": {
+    "name": "Mauritius",
+    "fe_cultdiv": 0.44847172498703,
+    "fe_etfra": 0.6315310001373291,
+    "fe_lmin": 0.2669999897480011,
+    "fe_plural": 0.5180000066757202,
+    "al_ethnic2000": 0.4633999999999999,
+    "al_language2000": 0.4546721999999999,
+    "al_religion2000": 0.6384659
+  },
+  "MEX": {
+    "name": "Mexico",
+    "fe_cultdiv": 0.4337790012359619,
+    "fe_etfra": 0.5417789220809937,
+    "fe_lmin": 0.3000000119209289,
+    "fe_plural": 0.6000000238418579,
+    "al_ethnic2000": 0.5418000000000001,
+    "al_language2000": 0.151119,
+    "al_religion2000": 0.1795571
+  },
+  "MCO": {
+    "name": "Monaco",
+    "al_ethnic2000": 0.6838,
+    "al_language2000": 0.7304891,
+    "al_religion2000": 0.3046875
+  },
+  "MNG": {
+    "name": "Mongolia",
+    "fe_cultdiv": 0.2270611524581909,
+    "fe_etfra": 0.27177494764328,
+    "fe_lmin": 0.0529999993741512,
+    "fe_plural": 0.8500000238418579,
+    "al_ethnic2000": 0.3682240000000003,
+    "al_language2000": 0.3734279,
+    "al_religion2000": 0.0798612
+  },
+  "MDA": {
+    "name": "Moldova (the Republic of)",
+    "fe_cultdiv": 0.4006792902946472,
+    "fe_etfra": 0.5103009939193726,
+    "fe_lmin": 0.2680000066757202,
+    "fe_plural": 0.6449999809265137,
+    "al_ethnic2000": 0.553478,
+    "al_language2000": 0.5533224,
+    "al_religion2000": 0.560292
+  },
+  "MAR": {
+    "name": "Morocco",
+    "fe_cultdiv": 0.3602383136749267,
+    "fe_etfra": 0.4786999821662903,
+    "fe_lmin": 0.3700000047683716,
+    "fe_plural": 0.6200000047683716,
+    "al_ethnic2000": 0.4840571792459798,
+    "al_language2000": 0.468344,
+    "al_religion2000": 0.0034627
+  },
+  "MOZ": {
+    "name": "Mozambique",
+    "fe_cultdiv": 0.2853359580039978,
+    "fe_etfra": 0.7652819752693176,
+    "fe_lmin": 0.2370000034570694,
+    "fe_plural": 0.3840000033378601,
+    "al_ethnic2000": 0.693216,
+    "al_language2000": 0.8124972,
+    "al_religion2000": 0.675908
+  },
+  "OMN": {
+    "name": "Oman",
+    "fe_cultdiv": 0.4039772748947143,
+    "fe_etfra": 0.4390199780464172,
+    "fe_lmin": 0.1330000013113021,
+    "fe_plural": 0.7350000143051147,
+    "al_ethnic2000": 0.4372560000000001,
+    "al_language2000": 0.3567431,
+    "al_religion2000": 0.4321768
+  },
+  "NAM": {
+    "name": "Namibia",
+    "fe_cultdiv": 0.5892874002456665,
+    "fe_etfra": 0.7244080305099487,
+    "fe_lmin": 0.0939999967813491,
+    "fe_plural": 0.4979999959468841,
+    "al_ethnic2000": 0.6329039999999999,
+    "al_language2000": 0.7005488,
+    "al_religion2000": 0.6626102
+  },
+  "NRU": {
+    "name": "Nauru",
+    "al_ethnic2000": 0.5831999999999999,
+    "al_language2000": 0.6160586,
+    "al_religion2000": 0.6193622
+  },
+  "NPL": {
+    "name": "Nepal",
+    "fe_cultdiv": 0.5424190759658813,
+    "fe_etfra": 0.6766780018806458,
+    "fe_lmin": 0.1840000003576278,
+    "fe_plural": 0.5320000052452087,
+    "al_ethnic2000": 0.663222,
+    "al_language2000": 0.7166870000000001,
+    "al_religion2000": 0.1416818
+  },
+  "NLD": {
+    "name": "Netherlands (the)",
+    "fe_cultdiv": 0.076799988746643,
+    "fe_etfra": 0.0768000483512878,
+    "fe_lmin": 0.0399999991059303,
+    "fe_plural": 0.959999978542328,
+    "al_ethnic2000": 0.1053722903125876,
+    "al_language2000": 0.5142933000000001,
+    "al_religion2000": 0.7221826
+  },
+  "VUT": {
+    "name": "Vanuatu",
+    "al_ethnic2000": 0.0413379999999997,
+    "al_language2000": 0.5793877000000001,
+    "al_religion2000": 0.7043762
+  },
+  "NZL": {
+    "name": "New Zealand",
+    "fe_cultdiv": 0.3634659647941589,
+    "fe_etfra": 0.3634659647941589,
+    "fe_lmin": 0.0970000028610229,
+    "fe_plural": 0.7910000085830688,
+    "al_ethnic2000": 0.39685,
+    "al_language2000": 0.1656535999999999,
+    "al_religion2000": 0.811008
+  },
+  "NIC": {
+    "name": "Nicaragua",
+    "fe_cultdiv": 0.0950000286102294,
+    "fe_etfra": 0.4018000364303589,
+    "fe_lmin": 0.1000000014901161,
+    "fe_plural": 0.7599999904632568,
+    "al_ethnic2000": 0.4844000000000001,
+    "al_language2000": 0.0473181,
+    "al_religion2000": 0.4290265
+  },
+  "NER": {
+    "name": "Niger (the)",
+    "fe_cultdiv": 0.5997370481491089,
+    "fe_etfra": 0.6368999481201172,
+    "fe_lmin": 0.2399999946355819,
+    "fe_plural": 0.5400000214576721,
+    "al_ethnic2000": 0.651762,
+    "al_language2000": 0.6519471,
+    "al_religion2000": 0.2012649
+  },
+  "NGA": {
+    "name": "Nigeria",
+    "fe_cultdiv": 0.6603732109069824,
+    "fe_etfra": 0.8048000335693359,
+    "fe_lmin": 0.2000000029802322,
+    "fe_plural": 0.2899999916553497,
+    "al_ethnic2000": 0.85046,
+    "al_language2000": 0.8503462852082981,
+    "al_religion2000": 0.7421445
+  },
+  "NOR": {
+    "name": "Norway",
+    "fe_cultdiv": 0.0975000262260437,
+    "fe_etfra": 0.0975000262260437,
+    "fe_plural": 0.949999988079071,
+    "al_ethnic2000": 0.0586,
+    "al_language2000": 0.0673454,
+    "al_religion2000": 0.2048005
+  },
+  "FSM": {
+    "name": "Micronesia (Federated States of)",
+    "al_ethnic2000": 0.7005359999999999,
+    "al_language2000": 0.7483131000000001,
+    "al_religion2000": 0.6469406
+  },
+  "PLW": {
+    "name": "Palau",
+    "al_ethnic2000": 0.4312000000000001,
+    "al_language2000": 0.3157246999999999,
+    "al_religion2000": 0.7146814
+  },
+  "PAK": {
+    "name": "Pakistan",
+    "fe_cultdiv": 0.2894966602325439,
+    "fe_etfra": 0.5320999622344971,
+    "fe_lmin": 0.1299999952316284,
+    "fe_plural": 0.6600000262260437,
+    "al_ethnic2000": 0.7097999999999999,
+    "al_language2000": 0.7190371,
+    "al_religion2000": 0.3848287
+  },
+  "PAN": {
+    "name": "Panama",
+    "fe_cultdiv": 0.1678999662399292,
+    "fe_etfra": 0.5066999793052673,
+    "fe_lmin": 0.1299999952316284,
+    "fe_plural": 0.6800000071525574,
+    "al_ethnic2000": 0.5528,
+    "al_language2000": 0.3873154,
+    "al_religion2000": 0.3337609
+  },
+  "PNG": {
+    "name": "Papua New Guinea",
+    "fe_etfra": 1.0,
+    "al_ethnic2000": 0.2718000000000001,
+    "al_language2000": 0.3525709,
+    "al_religion2000": 0.5522755
+  },
+  "PRY": {
+    "name": "Paraguay",
+    "fe_cultdiv": 0.0392000079154968,
+    "fe_etfra": 0.132200002670288,
+    "fe_lmin": 0.050000000745058,
+    "fe_plural": 0.9300000071525574,
+    "al_ethnic2000": 0.1688999999999999,
+    "al_language2000": 0.5975007999999999,
+    "al_religion2000": 0.2122512
+  },
+  "PER": {
+    "name": "Peru",
+    "fe_cultdiv": 0.5059000253677368,
+    "fe_etfra": 0.6378999948501587,
+    "fe_lmin": 0.3700000047683716,
+    "fe_plural": 0.449999988079071,
+    "al_ethnic2000": 0.656577,
+    "al_language2000": 0.3358169,
+    "al_religion2000": 0.1987815
+  },
+  "PHL": {
+    "name": "Philippines (the)",
+    "fe_cultdiv": 0.1160594224929809,
+    "fe_etfra": 0.1607539653778076,
+    "fe_lmin": 0.0399999991059303,
+    "fe_plural": 0.915000021457672,
+    "al_ethnic2000": 0.2385407321970181,
+    "al_language2000": 0.8359525,
+    "al_religion2000": 0.3055925
+  },
+  "POL": {
+    "name": "Poland",
+    "fe_cultdiv": 0.0407029390335083,
+    "fe_etfra": 0.0472549796104431,
+    "fe_lmin": 0.0130000002682209,
+    "fe_plural": 0.9760000109672546,
+    "al_ethnic2000": 0.1183395341893347,
+    "al_language2000": 0.0468132,
+    "al_religion2000": 0.1711816
+  },
+  "PRT": {
+    "name": "Portugal",
+    "fe_cultdiv": 0.0395999550819397,
+    "fe_etfra": 0.0395999550819397,
+    "fe_plural": 0.9800000190734864,
+    "al_ethnic2000": 0.0467573696145123,
+    "al_language2000": 0.0197804999999999,
+    "al_religion2000": 0.143832
+  },
+  "GNB": {
+    "name": "Guinea-Bissau",
+    "fe_cultdiv": 0.5678702592849731,
+    "fe_etfra": 0.8177000284194946,
+    "fe_lmin": 0.2199999988079071,
+    "fe_plural": 0.270000010728836,
+    "al_ethnic2000": 0.808214,
+    "al_language2000": 0.8141338,
+    "al_religion2000": 0.6128237
+  },
+  "TLS": {
+    "name": "Timor-Leste",
+    "al_language2000": 0.5260933,
+    "al_religion2000": 0.4253616
+  },
+  "QAT": {
+    "name": "Qatar",
+    "al_ethnic2000": 0.7456,
+    "al_language2000": 0.48,
+    "al_religion2000": 0.095
+  },
+  "ROU": {
+    "name": "Romania",
+    "fe_cultdiv": 0.2649686932563782,
+    "fe_etfra": 0.2997610569000244,
+    "fe_lmin": 0.0829999968409538,
+    "fe_plural": 0.8299999833106995,
+    "al_ethnic2000": 0.3068702570167496,
+    "al_language2000": 0.1723278,
+    "al_religion2000": 0.2372561
+  },
+  "RUS": {
+    "name": "Russian Federation (the)",
+    "fe_cultdiv": 0.3107962608337402,
+    "fe_etfra": 0.332997977733612,
+    "fe_lmin": 0.0379999987781047,
+    "fe_plural": 0.8149999976158142,
+    "al_ethnic2000": 0.24517,
+    "al_language2000": 0.2485197999999999,
+    "al_religion2000": 0.439795
+  },
+  "RWA": {
+    "name": "Rwanda",
+    "fe_cultdiv": 5.960464477539064e-08,
+    "fe_etfra": 0.1800000667572021,
+    "fe_lmin": 0.1000000014901161,
+    "fe_plural": 0.8999999761581421,
+    "al_ethnic2000": 0.3237999999999998,
+    "al_religion2000": 0.5065607
+  },
+  "KNA": {
+    "name": "Saint Kitts and Nevis",
+    "al_ethnic2000": 0.1841999999999999,
+    "al_religion2000": 0.6614069
+  },
+  "LCA": {
+    "name": "Saint Lucia",
+    "al_ethnic2000": 0.176862,
+    "al_language2000": 0.3169297,
+    "al_religion2000": 0.3320216
+  },
+  "VCT": {
+    "name": "Saint Vincent and the Grenadines",
+    "al_ethnic2000": 0.306598,
+    "al_language2000": 0.0175425,
+    "al_religion2000": 0.7027959
+  },
+  "SMR": {
+    "name": "San Marino",
+    "al_ethnic2000": 0.2927350000000001,
+    "al_religion2000": 0.1975309
+  },
+  "STP": {
+    "name": "Sao Tome and Principe",
+    "al_language2000": 0.2321874,
+    "al_religion2000": 0.186632
+  },
+  "SAU": {
+    "name": "Saudi Arabia",
+    "fe_cultdiv": 0.4132640957832336,
+    "fe_etfra": 0.5530999898910522,
+    "fe_lmin": 0.0599999986588954,
+    "fe_plural": 0.6600000262260437,
+    "al_ethnic2000": 0.18,
+    "al_language2000": 0.0949183,
+    "al_religion2000": 0.1270445
+  },
+  "SEN": {
+    "name": "Senegal",
+    "fe_cultdiv": 0.4020017981529236,
+    "fe_etfra": 0.7274999618530273,
+    "fe_lmin": 0.2399999946355819,
+    "fe_plural": 0.4300000071525574,
+    "al_ethnic2000": 0.693884,
+    "al_language2000": 0.6960835309107918,
+    "al_religion2000": 0.1497394
+  },
+  "SYC": {
+    "name": "Seychelles",
+    "al_ethnic2000": 0.2024680000000001,
+    "al_language2000": 0.1606187,
+    "al_religion2000": 0.2323022
+  },
+  "SLE": {
+    "name": "Sierra Leone",
+    "fe_cultdiv": 0.5344154834747314,
+    "fe_etfra": 0.763996958732605,
+    "fe_lmin": 0.3000000119209289,
+    "fe_plural": 0.3600000143051147,
+    "al_ethnic2000": 0.8190900000000002,
+    "al_language2000": 0.7633926,
+    "al_religion2000": 0.5395406
+  },
+  "SGP": {
+    "name": "Singapore",
+    "fe_cultdiv": 0.387861967086792,
+    "fe_etfra": 0.3878620266914367,
+    "fe_lmin": 0.1490000039339065,
+    "fe_plural": 0.7639999985694885,
+    "al_ethnic2000": 0.3856739999999999,
+    "al_language2000": 0.383518,
+    "al_religion2000": 0.6561286
+  },
+  "SVK": {
+    "name": "Slovakia",
+    "fe_cultdiv": 0.2928059101104736,
+    "fe_etfra": 0.3315140008926391,
+    "fe_lmin": 0.101000003516674,
+    "fe_plural": 0.8059999942779541,
+    "al_ethnic2000": 0.2538959999999998,
+    "al_language2000": 0.2551231,
+    "al_religion2000": 0.5654664
+  },
+  "VNM": {
+    "name": "Viet Nam",
+    "fe_cultdiv": 0.20966637134552,
+    "fe_etfra": 0.2327370047569275,
+    "fe_lmin": 0.0199999995529651,
+    "fe_plural": 0.875,
+    "al_ethnic2000": 0.2383079999999999,
+    "al_language2000": 0.2377085,
+    "al_religion2000": 0.5080248
+  },
+  "SVN": {
+    "name": "Slovenia",
+    "fe_cultdiv": 0.1695916056632995,
+    "fe_etfra": 0.2311230301856994,
+    "fe_lmin": 0.0270000007003545,
+    "fe_plural": 0.8759999871253967,
+    "al_ethnic2000": 0.221648,
+    "al_language2000": 0.2201092,
+    "al_religion2000": 0.2867554
+  },
+  "SOM": {
+    "name": "Somalia",
+    "fe_cultdiv": 0.2899743318557739,
+    "fe_etfra": 0.8116999864578247,
+    "fe_lmin": 0.2199999988079071,
+    "fe_plural": 0.25,
+    "al_ethnic2000": 0.8117,
+    "al_language2000": 0.0325556,
+    "al_religion2000": 0.0027548
+  },
+  "ZAF": {
+    "name": "South Africa",
+    "fe_cultdiv": 0.5301221609115601,
+    "fe_etfra": 0.8795750141143799,
+    "fe_lmin": 0.1800000071525573,
+    "fe_plural": 0.2199999988079071,
+    "al_ethnic2000": 0.7517428724324049,
+    "al_language2000": 0.86524,
+    "al_religion2000": 0.8602599
+  },
+  "ZWE": {
+    "name": "Zimbabwe",
+    "fe_cultdiv": 0.1412686109542846,
+    "fe_etfra": 0.3662000298500061,
+    "fe_lmin": 0.2000000029802322,
+    "fe_plural": 0.7699999809265137,
+    "al_ethnic2000": 0.3874,
+    "al_language2000": 0.4472268,
+    "al_religion2000": 0.736274
+  },
+  "ESP": {
+    "name": "Spain",
+    "fe_cultdiv": 0.2627866268157959,
+    "fe_etfra": 0.502161979675293,
+    "fe_lmin": 0.1689999997615814,
+    "fe_plural": 0.6800000071525574,
+    "al_ethnic2000": 0.4164629999999999,
+    "al_language2000": 0.4132177999999999,
+    "al_religion2000": 0.4513643
+  },
+  "SUR": {
+    "name": "Suriname",
+    "al_ethnic2000": 0.7332,
+    "al_language2000": 0.3309897,
+    "al_religion2000": 0.7909842
+  },
+  "SWZ": {
+    "name": "Eswatini",
+    "fe_cultdiv": 0.1432653069496154,
+    "fe_etfra": 0.2795500159263611,
+    "fe_lmin": 0.0989999994635582,
+    "fe_plural": 0.8429999947547913,
+    "al_ethnic2000": 0.0582,
+    "al_language2000": 0.1722420999999999,
+    "al_religion2000": 0.4444444
+  },
+  "SWE": {
+    "name": "Sweden",
+    "fe_cultdiv": 0.1894710659980774,
+    "fe_etfra": 0.1894710659980774,
+    "fe_lmin": 0.0230000000447034,
+    "fe_plural": 0.8999999761581421,
+    "al_ethnic2000": 0.0599936497652729,
+    "al_language2000": 0.196756,
+    "al_religion2000": 0.2341923
+  },
+  "CHE": {
+    "name": "Switzerland",
+    "fe_cultdiv": 0.417913019657135,
+    "fe_etfra": 0.5751650333404541,
+    "fe_lmin": 0.164000004529953,
+    "fe_plural": 0.621999979019165,
+    "al_ethnic2000": 0.5314,
+    "al_language2000": 0.544095,
+    "al_religion2000": 0.6083014
+  },
+  "SYR": {
+    "name": "Syrian Arab Republic (the)",
+    "fe_cultdiv": 0.2350000143051147,
+    "fe_etfra": 0.5806000232696533,
+    "fe_lmin": 0.1400000005960464,
+    "fe_plural": 0.6200000047683716,
+    "al_ethnic2000": 0.539922,
+    "al_language2000": 0.1816702,
+    "al_religion2000": 0.4309792
+  },
+  "TJK": {
+    "name": "Tajikistan",
+    "fe_cultdiv": 0.4915846586227417,
+    "fe_etfra": 0.5134340524673462,
+    "fe_lmin": 0.25,
+    "fe_plural": 0.6489999890327454,
+    "al_ethnic2000": 0.510718,
+    "al_language2000": 0.5473368000000001,
+    "al_religion2000": 0.3385717
+  },
+  "THA": {
+    "name": "Thailand",
+    "fe_cultdiv": 0.4313749670982361,
+    "fe_etfra": 0.4313749670982361,
+    "fe_lmin": 0.1400000005960464,
+    "fe_plural": 0.7400000095367432,
+    "al_ethnic2000": 0.6338239999999999,
+    "al_language2000": 0.634444,
+    "al_religion2000": 0.099422
+  },
+  "TGO": {
+    "name": "Togo",
+    "fe_cultdiv": 0.6020490527153015,
+    "fe_etfra": 0.8832570314407349,
+    "fe_lmin": 0.2000000029802322,
+    "fe_plural": 0.2199999988079071,
+    "al_ethnic2000": 0.7099279999999999,
+    "al_language2000": 0.8980154,
+    "al_religion2000": 0.6595591
+  },
+  "TON": {
+    "name": "Tonga",
+    "al_ethnic2000": 0.086902,
+    "al_language2000": 0.3782248,
+    "al_religion2000": 0.6214
+  },
+  "TTO": {
+    "name": "Trinidad and Tobago",
+    "fe_cultdiv": 0.3804882168769836,
+    "fe_etfra": 0.6469190120697021,
+    "fe_lmin": 0.3959999978542328,
+    "fe_plural": 0.402999997138977,
+    "al_ethnic2000": 0.64753,
+    "al_language2000": 0.1251202,
+    "al_religion2000": 0.7936096
+  },
+  "ARE": {
+    "name": "United Arab Emirates (the)",
+    "fe_cultdiv": 0.6502323150634766,
+    "fe_etfra": 0.7373000383377075,
+    "fe_lmin": 0.1700000017881393,
+    "fe_plural": 0.449999988079071,
+    "al_ethnic2000": 0.6252,
+    "al_language2000": 0.4873689,
+    "al_religion2000": 0.3310381
+  },
+  "TUN": {
+    "name": "Tunisia",
+    "fe_cultdiv": 0.0333831310272216,
+    "fe_etfra": 0.0394559502601623,
+    "fe_lmin": 0.0120000001043081,
+    "fe_plural": 0.9800000190734864,
+    "al_ethnic2000": 0.0394000000000001,
+    "al_language2000": 0.012422,
+    "al_religion2000": 0.0103731
+  },
+  "TUR": {
+    "name": "Turkey",
+    "fe_cultdiv": 0.2985039949417114,
+    "fe_etfra": 0.2985039949417114,
+    "fe_lmin": 0.1700000017881393,
+    "fe_plural": 0.8199999928474426,
+    "al_ethnic2000": 0.32,
+    "al_language2000": 0.2216339,
+    "al_religion2000": 0.0048609
+  },
+  "TKM": {
+    "name": "Turkmenistan",
+    "fe_cultdiv": 0.3275115489959717,
+    "fe_etfra": 0.3918360471725464,
+    "fe_lmin": 0.0920000001788139,
+    "fe_plural": 0.7699999809265137,
+    "al_ethnic2000": 0.3918340000000001,
+    "al_language2000": 0.3983544,
+    "al_religion2000": 0.232719
+  },
+  "TUV": {
+    "name": "Tuvalu",
+    "al_ethnic2000": 0.1629359999999999,
+    "al_language2000": 0.1371742,
+    "al_religion2000": 0.2524005
+  },
+  "UGA": {
+    "name": "Uganda",
+    "fe_cultdiv": 0.6467324495315552,
+    "fe_etfra": 0.9296979904174804,
+    "fe_lmin": 0.0799999982118606,
+    "fe_plural": 0.1599999964237213,
+    "al_ethnic2000": 0.930175,
+    "al_language2000": 0.9226795,
+    "al_religion2000": 0.6332101
+  },
+  "UKR": {
+    "name": "Ukraine",
+    "fe_cultdiv": 0.2583872675895691,
+    "fe_etfra": 0.4185999631881714,
+    "fe_lmin": 0.2199999988079071,
+    "fe_plural": 0.7300000190734863,
+    "al_ethnic2000": 0.4736719999999998,
+    "al_language2000": 0.4741077,
+    "al_religion2000": 0.6156578
+  },
+  "MKD": {
+    "name": "North Macedonia",
+    "fe_cultdiv": 0.4316121935844421,
+    "fe_etfra": 0.5348999500274658,
+    "fe_lmin": 0.209999993443489,
+    "fe_plural": 0.6460000276565552,
+    "al_ethnic2000": 0.5022579999999999,
+    "al_language2000": 0.5020711,
+    "al_religion2000": 0.5899174
+  },
+  "EGY": {
+    "name": "Egypt",
+    "fe_cultdiv": 0.0,
+    "fe_etfra": 0.1637999415397644,
+    "fe_lmin": 0.0900000035762786,
+    "fe_plural": 0.9100000262260436,
+    "al_ethnic2000": 0.1835919999999999,
+    "al_language2000": 0.023699,
+    "al_religion2000": 0.19788
+  },
+  "GBR": {
+    "name": "United Kingdom of Great Britain and Northern Ireland (the)",
+    "fe_cultdiv": 0.1839385032653808,
+    "fe_etfra": 0.3244873881340027,
+    "fe_lmin": 0.0949999988079071,
+    "fe_plural": 0.8149999976158142,
+    "al_ethnic2000": 0.1210589999999999,
+    "al_language2000": 0.0531692999999999,
+    "al_religion2000": 0.6944025
+  },
+  "TZA": {
+    "name": "Tanzania, the United Republic of",
+    "fe_cultdiv": 0.5641371607780457,
+    "fe_etfra": 0.9525750279426576,
+    "fe_lmin": 0.1000000014901161,
+    "fe_plural": 0.1199999973177909,
+    "al_ethnic2000": 0.735296,
+    "al_language2000": 0.8982635999999999,
+    "al_religion2000": 0.6334385
+  },
+  "USA": {
+    "name": "United States of America (the)",
+    "fe_cultdiv": 0.271320641040802,
+    "fe_etfra": 0.4909570217132568,
+    "fe_lmin": 0.125,
+    "fe_plural": 0.6909999847412109,
+    "al_ethnic2000": 0.490111130469376,
+    "al_language2000": 0.2513706638975601,
+    "al_religion2000": 0.8240782
+  },
+  "BFA": {
+    "name": "Burkina Faso",
+    "fe_cultdiv": 0.3539716601371765,
+    "fe_etfra": 0.7038329839706421,
+    "fe_lmin": 0.1400000005960464,
+    "fe_plural": 0.5,
+    "al_ethnic2000": 0.737738,
+    "al_language2000": 0.7227772,
+    "al_religion2000": 0.5797988
+  },
+  "URY": {
+    "name": "Uruguay",
+    "fe_cultdiv": 0.0,
+    "fe_etfra": 0.2175999879837036,
+    "fe_lmin": 0.0799999982118606,
+    "fe_plural": 0.8799999952316284,
+    "al_ethnic2000": 0.2504,
+    "al_language2000": 0.0817223,
+    "al_religion2000": 0.3548297
+  },
+  "UZB": {
+    "name": "Uzbekistan",
+    "fe_cultdiv": 0.442189872264862,
+    "fe_etfra": 0.4847750067710876,
+    "fe_lmin": 0.0799999982118606,
+    "fe_plural": 0.7099999785423279,
+    "al_ethnic2000": 0.4125139999999999,
+    "al_language2000": 0.4119866,
+    "al_religion2000": 0.2132638
+  },
+  "VEN": {
+    "name": "Venezuela (Bolivarian Republic of)",
+    "fe_cultdiv": 0.0196750164031982,
+    "fe_etfra": 0.4832749962806701,
+    "fe_lmin": 0.209999993443489,
+    "fe_plural": 0.6800000071525574,
+    "al_ethnic2000": 0.4966,
+    "al_language2000": 0.0685801,
+    "al_religion2000": 0.1350304
+  },
+  "WSM": {
+    "name": "Samoa",
+    "al_ethnic2000": 0.137608,
+    "al_language2000": 0.0111107,
+    "al_religion2000": 0.7871165
+  },
+  "YEM": {
+    "name": "Yemen",
+    "fe_cultdiv": 0.0784000158309936,
+    "fe_etfra": 0.0784000158309936,
+    "fe_plural": 0.959999978542328,
+    "al_language2000": 0.0079816999999999,
+    "al_religion2000": 0.0022857
+  },
+  "ZMB": {
+    "name": "Zambia",
+    "fe_cultdiv": 0.1885120272636413,
+    "fe_etfra": 0.7258000373840332,
+    "fe_lmin": 0.1899999976158142,
+    "fe_plural": 0.4300000071525574,
+    "al_ethnic2000": 0.7808,
+    "al_language2000": 0.8734083,
+    "al_religion2000": 0.7358689
+  },
+  "MHL": {
+    "name": "Marshall Islands",
+    "al_ethnic2000": 0.0603379999999997,
+    "al_language2000": 0.0600925425154739,
+    "al_religion2000": 0.52071
+  }
+}
